@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .load-anim{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50vh;
+    background-color: rgba(128, 255, 0, 0);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+#div1{
+    height: 60px;
+    width: 10px;
+    background-color: rgb(32, 74, 8);
+    border-radius: 50px;
+    margin: 7px;
+    animation: extend1 1.2s linear infinite;
+}
+#div2{
+    height: 70px;
+    width: 10px;
+    border-radius: 50px;
+    background-color: rgb(32, 74, 8);
+    animation: extend2 1s linear infinite;
+}
+#div3{
+    height: 100px;
+    width: 10px;
+    background-color: rgb(32, 74, 8);
+    border-radius: 50px;
+    margin: 7px;
+    animation: extend3 0.9s linear infinite;
+}
+#div4{
+    height: 70px;
+    width: 10px;
+    border-radius: 50px;
+    background-color: rgb(32, 74, 8);
+    animation: extend4 1s linear infinite;
+}
+#div5{
+    height: 60px;
+    width: 10px;
+    border-radius: 50px;
+    background-color: rgb(32, 74, 8);
+    margin: 7px;
+    animation: extend5 1.2s linear infinite;
+}
+@keyframes extend1 {
+    0%{
+        transform: scaleY(0.3);
+    }
+    50%{
+        transform: scaleY(0.9);
+    }
+    100%{
+        transform: scaleY(0.3)
+    }
+}
+@keyframes extend2 {
+    0%{
+        transform: scaleY(0.9);
+    }
+    50%{
+        transform: scaleY(0.2);
+    }
+    100%{
+        transform: scaleY(0.9)
+    }
+}
+@keyframes extend3 {
+    0%{
+        transform: scaleY(0.5);
+    }
+    50%{
+        transform: scaleY(0.9);
+    }
+    100%{
+        transform: scaleY(0.5)
+    }
+}
+@keyframes extend4 {
+    0%{
+        transform: scaleY(0.9);
+    }
+    50%{
+        transform: scaleY(0.2);
+    }
+    100%{
+        transform: scaleY(0.9)
+    }
+}
+@keyframes extend5 {
+    0%{
+        transform: scaleY(0.3);
+    }
+    50%{
+        transform: scaleY(0.9);
+    }
+    100%{
+        transform: scaleY(0.3)
+    }
+}
+@keyframes dissapear{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+    </style>
+</head>
+<body>
+    <section class="load-anim">
+        <div id="div1"></div>
+        <div id="div2"></div>
+        <div id="div3"></div>
+        <div id="div4"></div>
+        <div id="div5"></div>
+    </section>
+</body>
+</html>
