@@ -3,10 +3,119 @@ body{
     padding: 0;
     background-color: #f5f5f5;
 }
-
+#load-anim{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(14, 84, 8);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+#div1{
+    height: 60px;
+    width: 10px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+    margin: 7px;
+    animation: extend1 1.2s linear infinite;
+}
+#div2{
+    height: 70px;
+    width: 10px;
+    border-radius: 50px;
+    background-color: rgb(255, 255, 255);
+    animation: extend2 1s linear infinite;
+}
+#div3{
+    height: 100px;
+    width: 10px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+    margin: 7px;
+    animation: extend3 0.9s linear infinite;
+}
+#div4{
+    height: 70px;
+    width: 10px;
+    border-radius: 50px;
+    background-color: rgb(255, 255, 255);
+    animation: extend4 1s linear infinite;
+}
+#div5{
+    height: 60px;
+    width: 10px;
+    border-radius: 50px;
+    background-color: rgb(255, 255, 255);
+    margin: 7px;
+    animation: extend5 1.2s linear infinite;
+}
+@keyframes extend1 {
+    0%{
+        transform: scaleY(0.3);
+    }
+    50%{
+        transform: scaleY(0.9);
+    }
+    100%{
+        transform: scaleY(0.3)
+    }
+}
+@keyframes extend2 {
+    0%{
+        transform: scaleY(0.9);
+    }
+    50%{
+        transform: scaleY(0.2);
+    }
+    100%{
+        transform: scaleY(0.9)
+    }
+}
+@keyframes extend3 {
+    0%{
+        transform: scaleY(0.5);
+    }
+    50%{
+        transform: scaleY(0.9);
+    }
+    100%{
+        transform: scaleY(0.5)
+    }
+}
+@keyframes extend4 {
+    0%{
+        transform: scaleY(0.9);
+    }
+    50%{
+        transform: scaleY(0.2);
+    }
+    100%{
+        transform: scaleY(0.9)
+    }
+}
+@keyframes extend5 {
+    0%{
+        transform: scaleY(0.3);
+    }
+    50%{
+        transform: scaleY(0.9);
+    }
+    100%{
+        transform: scaleY(0.3)
+    }
+}
 .header{
-    background-color: rgb(55, 83, 14);
+    background-color: rgb(4, 56, 25);
     padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 .logo-container{
     display: flex;
@@ -16,35 +125,44 @@ body{
 .logo{
     margin-right: 10px;
     width: 70px;
-    height: 70px;
 }
 .head-text{
     font-size: 30px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: white;
+    color: rgb(67, 204, 13);
     font-weight: bold;
     text-shadow: 2px 5px 5px rgb(10, 83, 26);
 }
 .nav{
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(55, 99, 12);
     padding: 10px;
+}
+a{
+    text-decoration: none;
 }
 .nav-btn{
     padding: 10px;
-    margin: 5px;
-    background-color: rgb(115, 205, 24);
-    border: 1px solid green;
+    margin: 9px;
+    background-color: rgb(4, 56, 25);
+    border: 2px solid rgb(12, 67, 12);
     border-radius: 3px;
     font-weight: bold;
+    color: white;
 }
 .nav-btn:hover{
     transform: scaleX(1.1);
-    transition: 0.5ms linear;
+    transition: 0.5s linear;
     cursor: pointer;
-    background-color: chartreuse;
+    color: black;
+    background-color: rgb(116, 214, 18);
+}
+@media (max-width: 500px){
+    .header{
+        background-color: rgb(0, 90, 19);
+    }
+    #load-anim{
+        background-color: rgb(24, 96, 56);
+    }
+    .nav-btn{
+        background-color: rgb(0, 90, 19);
+    }
 }
